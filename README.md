@@ -24,7 +24,7 @@ Run the analysis from the repository root with `python main.py` in an environmen
 
 ### Program entry point and separation of responsibilities
 
-The executable entry point is `main.py`. It deliberately contains very little code: it identifies the project root and calls `run()` from `src/analysis.py`. This keeps analysis logic in one reusable module while preserving a simple, predictable command for anyone inspecting the project. Running `main.py` does not download data or change the choice of batches; it reads the 30 CSV files already placed in `datasets/`. The original template's directory arrangement separates source code, input datasets, exported tables, and graphics. This organization allows another user to rerun the numerical work and inspect the results without sorting through a single large script.
+The executable entry point is `main.py`. It deliberately contains very little code: it identifies the project root and calls `run()` from `src/analysis.py`. This keeps analysis logic in one reusable module while preserving a simple, predictable command for anyone inspecting the project. Running `main.py` does not download data or change the choice of batches; it reads the 30 CSV files already placed in `datasets/`. Source code, input datasets, tables, and graphs are kept in separate folders so the results are easy to trace. This organization allows another user to rerun the numerical work and inspect the results without sorting through a single large script.
 
 ### Experimental data selection and provenance
 
@@ -118,9 +118,9 @@ To examine the three input factors without relying only on one winning point, th
 
 For **initial glucose**, the mean optimized profit across the 49 combinations of the other two inputs is $30.91 per L/day at the lowest studied setting (5), and $39.35 per L/day at the highest (35). The input level with the highest mean predicted profit is 15, averaging $59.57 per L/day. These are *model-derived marginal summaries*, not directly measured independent effects.
 
-For **initial glutamine**, the mean optimized profit across the 49 combinations of the other two inputs is $57.61 per L/day at the lowest studied setting (1), and $36.64 per L/day at the highest (7). The input level with the highest mean predicted profit is 1, averaging $57.61 per L/day. These are *model-derived marginal summaries*, not directly measured independent effects.
+For **initial glutamine**, the mean optimized profit across the 49 combinations of the other two inputs is $57.61 per L/day at the lowest studied setting (1), and $36.64 per L/day at the highest (7). The input level with the highest mean predicted profit is 1, averaging $57.61 per L/day.
 
-For **initial VCD**, the mean optimized profit across the 49 combinations of the other two inputs is $36.29 per L/day at the lowest studied setting (200,000), and $28.32 per L/day at the highest (1,400,000). The input level with the highest mean predicted profit is 600,000, averaging $74.90 per L/day. These are *model-derived marginal summaries*, not directly measured independent effects.
+For **initial VCD**, the mean optimized profit across the 49 combinations of the other two inputs is $36.29 per L/day at the lowest studied setting (200,000), and $28.32 per L/day at the highest (1,400,000). The input level with the highest mean predicted profit is 600,000, averaging $74.90 per L/day.
 
 The relevant physical interpretation is that nutrient supply may support metabolic activity, while a larger inoculum can change the culture's production trajectory. The model does not directly test those biological mechanisms, however, so statements about precisely *why* a setting is profitable would require additional process measurements or experiments. Initial glucose and glutamine also increase media cost independently of any possible production benefit. Higher initial VCD likewise increases inoculum cost before any product has accumulated. The plotted relationship among glucose, glutamine, and predicted profit is conditional on the recommended VCD, so its colour scale should not be interpreted as a universal response for every inoculum level.
 
