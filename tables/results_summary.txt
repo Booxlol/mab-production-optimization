@@ -1,0 +1,34 @@
+# Model and optimization results
+
+Selected model: **Random forest**.
+
+Validation: 5-fold grouped cross-validation; each held-out fold contains entire batches.
+Models predict mAb/time to enforce zero mAb at t=0; fit excludes noisy t=0 measurements.
+Prediction intervals: approximate pointwise 95% intervals based on the 2.5th and 97.5th
+percentiles of held-out residuals, added to the final model prediction. These intervals
+are not formal guarantees of coverage, especially for unobserved initial-condition combinations.
+
+## Recommended conditions
+
+- Glucose [mM]: **15.000 mM**
+- Glutamine [mM]: **1.000 mM**
+- VCD [cells/mL]: **600,000.000 cells/mL**
+- Time [d]: **2.667 days**
+- Cell culture cost [$/L]: **470.000 $/L**
+- Cell culture value [$/L]: **853.402 $/L**
+- Cell culture value PI lower [$/L]: **669.397 $/L**
+- Cell culture value PI upper [$/L]: **1,095.381 $/L**
+- Space-time profit [$/L/d]: **104.564 $/L/day**
+- Space-time profit PI lower [$/L/d]: **54.381 $/L/day**
+- Space-time profit PI upper [$/L/d]: **170.559 $/L/day**
+- Space-time yield [mg/L/d]: **0.233 mg/L/day**
+- Space-time yield PI lower [mg/L/d]: **0.183 mg/L/day**
+- Space-time yield PI upper [mg/L/d]: **0.299 mg/L/day**
+
+## Model comparison
+
+- Random forest: RMSE 0.112 mg/L, R² 0.879
+- Ridge polynomial (degree 3): RMSE 0.391 mg/L, R² -0.466
+- Ridge polynomial (degree 2): RMSE 0.563 mg/L, R² -2.053
+
+See figures/ and tables/ for the underlying evidence.

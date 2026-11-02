@@ -1,0 +1,31 @@
+Selection type,Batch ID,Glucose [mM],Glutamine [mM],VCD [cells/mL],File
+Corner,2,5.0,1.0,200000.0,batch_0002.csv
+Corner,20,5.0,1.0,1400000.0,batch_0020.csv
+Corner,128,5.0,7.0,200000.0,batch_0128.csv
+Corner,145,5.0,7.0,1400000.0,batch_0145.csv
+Corner,885,35.0,1.0,200000.0,batch_0885.csv
+Corner,903,35.0,1.0,1400000.0,batch_0903.csv
+Corner,1010,35.0,7.0,200000.0,batch_1010.csv
+Corner,1028,35.0,7.0,1400000.0,batch_1028.csv
+Face centre,75,5.0,4.0,800000.0,batch_0075.csv
+Face centre,956,35.0,4.0,800000.0,batch_0956.csv
+Face centre,452,20.0,1.0,800000.0,batch_0452.csv
+Face centre,578,20.0,7.0,800000.0,batch_0578.csv
+Face centre,505,20.0,4.0,200000.0,batch_0505.csv
+Face centre,523,20.0,4.0,1400000.0,batch_0523.csv
+Overall centre,515,20.0,4.0,800000.0,batch_0515.csv
+Distributed interior,195,10.0,3.0,400000.0,batch_0195.csv
+Distributed interior,793,30.0,3.0,1200000.0,batch_0793.csv
+Distributed interior,711,25.0,6.0,1200000.0,batch_0711.csv
+Distributed interior,333,15.0,2.0,1200000.0,batch_0333.csv
+Distributed interior,613,25.0,2.0,400000.0,batch_0613.csv
+Distributed interior,848,30.0,6.0,600000.0,batch_0848.csv
+Distributed interior,247,10.0,5.0,1200000.0,batch_0247.csv
+Distributed interior,405,15.0,6.0,400000.0,batch_0405.csv
+Distributed interior,180,10.0,2.0,800000.0,batch_0180.csv
+Distributed interior,263,10.0,6.0,800000.0,batch_0263.csv
+Random,739,30.0,1.0,400000.0,batch_0739.csv
+Random,993,35.0,6.0,400000.0,batch_0993.csv
+Random,542,20.0,5.0,1200000.0,batch_0542.csv
+Random,753,30.0,1.0,1200000.0,batch_0753.csv
+Random,780,30.0,3.0,200000.0,batch_0780.csv
